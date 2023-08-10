@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css" integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
+
+    <!-- Google FOnt -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Open+Sans:wght@300;400&family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Boxicons -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- FontAwesome.com -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- CSS -->
+        <link rel="stylesheet" href="./src/css/tentangpages.css">
+
+    <!-- Swiper -->
+    <link rel="stylesheet"  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+               <!-- cd JQuary -->
+       <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+       <!-- cd jQuary validation -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.4/jquery.validate.min.js" integrity="sha512-FOhq9HThdn7ltbK8abmGn60A/EMtEzIzv1rvuh+DqzJtSGq8BRdEN0U+j0iKEIffiw/yEtVuladk6rsG4X6Uqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <title > Vapeshop 24 - Home</title>
+  </head>
+  <body>
+      <!-- Navbar -->
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 ">
+            <div class="container ">
+            <a class="navbar-brand" href="./final.html"><span>VAPE</span>SHOP 24</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end align-items-lg-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-5 ">
+                <a class="nav-link  ms-4" href="./final.html">Home</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle  ms-4" href="#" role="button" data-bs-toggle="dropdown">Kategori Produk</a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><a class="dropdown-item" href="#liquid">Liquid Vape</a></li>
+                      <li><a class="dropdown-item" href="#device">Device</a></li>
+                      <li><a class="dropdown-item" href="#atom">Atomizers</a></li>
+                      <li><a class="dropdown-item" href="#">Accessories</a></li>
+                    </ul>
+                  </li>
+                <a class="nav-link ms-4" href="./tentangpages.html">Tentang Kami</a>
+                <a class="nav-link " href="./kontakpages.html" >Kontak Kami</a>
+                </div>
+                <div class="icons-home mt-4 mt-lg-0">
+                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" href="#"><i class='bx bx-user'></i></button>
+                    
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <!-- signup -->  
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content">
+          <div class="container container-dftr" >
+            <h1 class="heading">Daftar</h1>
+            <p class="subheading">Silakan isi formulir ini untuk membuat akun.</p>
+            <hr>
+            <label class="subheading" for="usrname">Username</label>
+            <input type="text" placeholder="Enter Username" id="usrname" name="usrname" required>
+
+            <label class="subheading" for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+      
+            <label class="subheading" for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Harus mengandung setidaknya satu angka dan satu huruf besar dan kecil, dan setidaknya 8 karakter atau lebih" id="psw" required >
+            
+            <input type="checkbox" id="toggle">
+            <span id="toggleText">Tampilkan Password</span>
+        </p>
+      
+            <p class="subheading">By creating an account you agree to our <a href="#" style="color: #E87A00;">Terms & Privacy</a>.</p>
+      
+            <div class="clearfix">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <button onclick="signFunc()" type="submit" id="signupp" class="signupbtn">Sign Up</button>
+
+              <div class="text-center" id="mySignup" style="color: #fff;"></div>
+            </div>
+          </div>
+        </form>
+      </div>
+    
+
+
+<!-- content tentang kami -->
+<div class="container content-tentangs">
+    <div class="row mt-4">
+        <div class="col text-end">
+            <h1 class="heading">Tentang Kami</h1>
+            <div class="col mt-4">
+                <div class="row mt-3">
+                    <div class="col">
+                        <p>VapeShop24 telah hadir sejak tahun 2022 dan menjadi toko terdepan dalam hal Personal Vapor. Kami memiliki visi untuk memberikan edukasi dan mengubah cara merokok pada umumnya dengan cara baru yang lebih sehat. Berbekal pengetahuan, pengalaman dan juga informasi terbaru mengenai segala aktivitas vaping, kami selalu berkomitmen untuk menyediakan produk serta layanan berkualitas yang disesuaikan dengan kebutuhan dan keinginan tiap pelanggan.</p>
+                    </div>
+                   <div class="row">
+                    <div class="co">
+                        <div class="col">
+                            <p>Mengapa memilih belanja di VapeShop24 ?</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <ul>
+                                <li>Anda bisa mendapatkan kebutuhan vaping dengan harga yang murah dan kompetitif serta promo menarik di seluruh outlet kami.</li>
+                                <li>Kami menyediakan berbagai macam jenis produk vaping untuk memenuhi kebutuhan Anda (liquid, device, atomizer, coil, battery, accessories, dan lainnya).</li>
+                                <li>Kami memiliki 6 outlet yang tersebar di area Yogyakarta dan dapat Anda kunjungi untuk mendapatkan kebutuhan vaping Anda.</li>
+                                <li>Kami menyediakan pilihan belanja online melalui WhatsApp, Tokopedia, Shopee, dan Bukalapak untuk kemudahan Anda berbelanja dari mana saja.</li>
+                                <li>Kami menerima beragam pilihan pembayaran serta menyediakan beragam dukungan pengiriman pesanan, baik ke dalam maupun luar kota.</li>
+                                <li>Kami melayani pembelian untuk reseller di seluruh Indonesia</li>
+                            </ul>
+                            <div class="row content-bawah">
+                                <div class="col">
+                                    <p class="p">Untuk mengetahui lebih lanjut tentang Vaporizer Jakarta, Anda dapat menghubungi kami melalui telepon atau WhatsApp di nomor 
+                                        <a href="https://api.whatsapp.com/send?
+                                        phone=6281224157712&text=halo%20gan%2C%20saya%20mau%20pesan">081234567891</a>
+                                        atau follow Instagram kami di 
+                                        <a href="https://instagram.com/koilko.yk?igshid=YmMyMTA2M2Y=">@koilko.yk</a> 
+                                    </p>
+                                    <p>Jadi tunggu apalagi, sudahkah Anda belanja di VapeShop24 hari ini?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+            </div>
+        </div>
+        </div>
+<!-- TAMPILAN BTN-BANNER -->
+        <section class="banner">
+          <div class="container">
+              <div class="row py-3 ban-btn">
+                  <div class="col">
+                      <a href=" ./liquidpages1.html"><button class="button button1"><img src="./src/img/baneer-liquid.jpg" alt=""></button></a>
+                  </div>
+                  <div class="w-100 d-lg-none"></div>
+                  <div class="col">
+                      <a href="#"><button class="button  button1"><img src="./src/img/banner-device.jpg" alt=""></button></a>
+                  </div> 
+                  <div class="w-100 d-lg-none"></div>
+                  <div class="col">
+                      <a href="#"><button class="button  button1"><img src="./src/img/banner-atom.jpg" alt=""></button></a>
+                  </div> 
+                  <div class="w-100 d-lg-none"></div>
+                  <div class="col">
+                      <a href="./accpages.html"><button class="button  button1"><img src="./src/img/banner-acc.jpg" alt=""></button></a>
+                  </div> 
+              </div>
+          </div>
+      </section>
+    </div>
+
+
+
+
+      <!-- Footer -->
+  <!-- Footer -->
+  <footer class="footer mt-5 pt-5">
+    <div class="container">
+        <div class="row p-3 justify-content-between">
+            <div class="col-lg-4 col-md-6 col1">
+                <h3 class="footer-brand"><span>VAPE</span>SHOP24</h3>
+                <p class="mt-3 d-inline-block">Kami menyediakan perlengkapan dan alat e-cigarete, personal vaporizer atau yang biasa dikenal dengan vape baik aksesoris, atomizer tank, RBA, RDA, mechanical mod, dan lain sebagainya. Kami memberikan harga murah dan dapat mengirim ke seluruh Indonesia.</p>
+                <p class="mt-3 d-inline-block"><p class="mt-3 d-inline-block">Vapeshop24.com juga menyediakan pembelian untuk reseller baik wilayah Yogyakarta dan kota lainnya di Indonesia. Untuk keterangan lebih lanjut silahkan hubungi kami VapeShop24 (V24).</p>.</p>
+                <a href="#" class="d-block"></a>
+                <div class="icon-footer mt-3">
+                    <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="#"><i class='bx bxl-instagram-alt mx-2'></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col2 mt-4 mt-md-0">
+                <h3>Lokasi Outlet</h3>
+                <ul class="pe-0">
+                    <li><a href="#">Minomartani</a></li>
+                    <li><a href="#">Condongcatur</a></li>
+                    <li><a href="#">Seturan</a></li>
+                    <li><a href="#">Babarsari</a></li>
+                    <li><a href="#">Pogung</a></li>
+                    <li><a href="#">Babarsari</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col5 mt-4 mt-lg-0">
+                <h3>Address</h3>
+                <p class="text-white">Jl. Mujair Raya
+                    Mladangan, Minomartani
+                    Kec. Ngaglik
+                    Kabupaten Sleman
+                    Daerah Istimewa Yogyakarta 55581.</p>
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.395225655409!2d110.40223571425179!3d-7.747836294415772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59735fda0027%3A0xf560961934ee3741!2sJl.%20Mujair%20Raya%2C%20Mladangan%2C%20Minomartani%2C%20Kec.%20Ngaglik%2C%20Kabupaten%20Sleman%2C%20Daerah%20Istimewa%20Yogyakarta%2055581!5e0!3m2!1sen!2sid!4v1656929919850!5m2!1sen!2sid" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="row mt-3 col-copyright">
+            <div class="col text-center">
+                <p class="text-white">&copy;Copyright 2022 All Right Reserve | Built by <a href="./prof-kel.html">Adidongsss and Team</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+  <!-- custom js -->
+  <script src="./src/js/signup.js"></script>
+         
+
+  </body>
+  </html>
